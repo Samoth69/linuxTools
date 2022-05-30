@@ -72,7 +72,7 @@ uninstall_auto_update() {
 main() {
     # see https://askubuntu.com/a/1716
     PS3='Please enter your choice: '
-    options=("Setup auto-update cron" "Remove auto-update cron" "Setup correct timezone" "Quit")
+    options=("Setup auto-update cron" "Remove auto-update cron" "Setup correct timezone (TODO)" "Quit")
     select opt in "${options[@]}"; do
         case $opt in
         "${options[0]}")

@@ -26,7 +26,7 @@ if [ -f /var/run/reboot-required ]; then
     # check if a restart HASN'T been planned
     if [ ! -f /run/systemd/shutdown/scheduled ]; then
         echo -e "${Red}Planning reboot for 5AM${Color_Off}"
-        shutdown -r 05:00
+        shutdown -r now
     else
         echo -e "${Red}Reboot already planned${Color_Off}"
     fi
